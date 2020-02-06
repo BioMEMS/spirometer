@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:text="0"
+        android:textSize="10pt" />
+
+    <TextView
+        android:id="@+id/directions"
+        android:layout_width="900dip"
+        android:layout_height="100dip"
+        android:layout_below="@id/test"
+        android:layout_centerHorizontal="true"
+        android:text="Please obtain the sensor device. Do not connect the sensor device via USB yet. Press the READY button when you have the sensor device and are ready to start the test."
+        android:textSize="10pt" />
+
+    <TextView
+        android:id="@+id/countdown_line"
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:layout_below="@id/directions"
+        android:gravity="center_horizontal"
+        android:text="0"
+        android:textSize="10pt" />
+
+    <Button
+        android:id="@+id/ready_button"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/countdown_line"
+        android:layout_centerHorizontal="true"
+        android:text="Ready" />
+    
+        <Button
+        android:id="@+id/home_button"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ready_button"
+        android:layout_centerHorizontal="true"
+        android:text="Back to Home Screen" />
+
+</RelativeLayout>

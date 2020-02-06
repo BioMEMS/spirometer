@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent" 
+    android:layout_width="fill_parent" 
+    android:orientation="vertical" >
+
+    <TextView
+   		android:id="@+id/test"
+   		android:text="0"
+        android:layout_width="fill_parent"
+        android:padding="5sp"
+        android:layout_height="wrap_content"/>
+    
+    <TextView
+   		android:id="@+id/flow_rate"
+   		android:text="Flow rate (L/min)"
+        android:layout_width="fill_parent"
+        android:padding="5sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/test"/>
+              
+    <TextView
+   		android:id="@+id/pressurevalue"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/flow_rate"
+        android:padding="5sp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        />
+    
+    <TextView
+   		android:id="@+id/pressurevalue_low"
+   		android:text="0"
+        android:layout_width="fill_parent"
+        android:padding="5sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flow_rate"/>
+    
+      <TextView
+   		android:id="@+id/pef"
+   		android:layout_below="@id/pressurevalue"
+   		android:text="Peak Expiratory Flow (L/min)"
+        android:layout_width="fill_parent"
+        android:padding="5sp"
+        android:layout_height="wrap_content"/>
+        
+      <TextView
+   		android:id="@+id/peakvalue"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/pef"
+        android:padding="5sp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        />
+
+      <Button
+          android:id="@+id/home_button"
+          android:layout_width="500dip"
+          android:layout_height="40dip"
+          android:text="Stop / Back To Home Screen" />
+        
+   <Button
+        android:id="@+id/email_button"
+        android:layout_width="500dip"
+        android:layout_height="40dip"
+        android:layout_below="@id/home_button"
+        android:layout_centerHorizontal="true"
+        android:text="Email Results" 
+        />
+   
+  <TextView
+   		android:id="@+id/graphtestline"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/email_button"
+        android:padding="5sp" 
+        android:layout_height="wrap_content"
+        android:text="0"
+        />
+  
+  <TextView
+   		android:id="@+id/checkline"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/graphtestline"
+        android:padding="5sp" 
+        android:layout_height="wrap_content"
+        android:text="0"
+        />
+  
+    <TextView
+      android:id="@+id/cp_checkline"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/checkline"
+      android:padding="5sp"
+      android:text="0" />
+    
+  <TextView
+      android:id="@+id/no_checkline"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/cp_checkline"
+      android:padding="5sp"
+      android:text="0" />
+  
+  <TextView
+      android:id="@+id/no_checkline1"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/no_checkline"
+      android:padding="5sp"
+      android:text="0" />
+
+  <TextView
+      android:id="@+id/co_checkline"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/no_checkline1"
+      android:padding="5sp"
+      android:text="0" />
+  
+    <TextView
+      android:id="@+id/co_checkline1"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/co_checkline"
+      android:padding="5sp"
+      android:text="0" />
+    
+  <TextView
+      android:id="@+id/o2_checkline"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/co_checkline"
+      android:padding="5sp"
+      android:text="0" />
+  
+  <TextView
+      android:id="@+id/o2_checkline1"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/o2_checkline"
+      android:padding="5sp"
+      android:text="0" />
+  
+  <TextView
+      android:id="@+id/fev1"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/o2_checkline"
+      android:padding="5sp"
+      android:text="0" />
+    
+  <TextView
+      android:id="@+id/fev6"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/fev1"
+      android:padding="5sp"
+      android:text="0" />
+   
+   <LinearLayout
+       android:id="@+id/chart"
+       android:layout_width="300dip"
+       android:layout_height="300dip"
+       android:layout_below="@id/checkline1"
+       android:orientation="horizontal" />
+        
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:gravity="center_horizontal"
+        android:text="0"
+        android:textSize="10pt" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:layout_below="@id/test"
+        android:gravity="center_horizontal"
+        android:text="Location"
+        android:textSize="10pt" />
+
+    <TextView
+        android:id="@+id/gps"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_below="@id/location"
+        android:gravity="center_horizontal"
+        android:text="Waiting for GPS location information..."
+        android:textSize="9pt" />
+
+    <TextView
+        android:id="@+id/medication_dosage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gps"
+        android:gravity="center_horizontal"
+        android:text="Last Medication Dose?"
+        android:textSize="9pt" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/medication_dosage"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/radio_30minutes"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:onClick="onRadioButtonClicked"
+            android:text="30 Minutes" />
+
+        <RadioButton
+            android:id="@+id/radio_1hour"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:onClick="onRadioButtonClicked"
+            android:text="1 Hour       " />
+
+        <RadioButton
+            android:id="@+id/radio_2hour"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:onClick="onRadioButtonClicked"
+            android:text="2 Hours     " />
+
+        <RadioButton
+            android:id="@+id/radio_3hour"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:onClick="onRadioButtonClicked"
+            android:text="3 Hours     " />
+
+        <RadioButton
+            android:id="@+id/radio_morehour"
+            android:layout_width="wrap_content"
+            android:layout_height="70dip"
+            android:onClick="onRadioButtonClicked"
+            android:text="3+ Hours  " />
+    </RadioGroup>
+    
+    <TextView
+        android:id="@+id/medication_comments"
+        android:layout_width="900dip"
+        android:layout_height="50dip"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/radioGroup1"
+        android:layout_centerHorizontal="true"
+        android:text="Please comment on your current environment and asthma condition (medication, symptoms, etc.). Press the enter key on the keyboard once. Your comments will be recorded onto the saved data file."
+        android:textSize="9pt" />
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="1000dip"
+        android:layout_height="100dip"
+        android:layout_below="@+id/medication_comments"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Next" />
+
+</RelativeLayout>

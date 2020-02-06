@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.davis.AsthmaAppTablet"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="10"/>
+    
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+    <application android:name=".GlobalVars" android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="true">
+    
+    <uses-library android:name="com.android.future.usb.accessory"/>
+        <activity android:name=".AsthmaAppTabletActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+	<activity android:name=".Screen2Activity" ></activity>
+	<activity android:name=".Screen3Activity" ></activity> 
+	<activity android:name=".Screen4Activity" ></activity>
+	<activity android:name=".MyCount"></activity>  
+	<activity android:name=".Screen6Activity" ></activity>
+	<activity android:name=".EmailActivity"></activity>
+
+	<activity android:name=".DemoKitActivity" android:label="@string/app_name"></activity>
+	<activity android:name=".DemoKitPhone" android:label="@string/app_name"></activity>
+	<activity android:name=".DemoKitTablet" android:label="@string/app_name"></activity>
+	
+	<receiver android:name=".DailyReminder"></receiver>
+	<activity android:name="UsbAccessoryActivity" android:label="Asthma App Tablet"
+			android:taskAffinity="" android:launchMode="singleInstance">
+		<intent-filter>
+			<action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
+		</intent-filter>
+
+			<meta-data android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
+				android:resource="@xml/accessory_filter" />
+
+	</activity>
+	
+	<activity android:name="org.achartengine.chartdemo.demo.chart.XYChartBuilder"/>
+    <activity android:name="org.achartengine.GraphicalActivity"/>
+    <activity android:name=".BaseActivity"/>
+    
+    <activity android:name="flanagan.analysis.Regression"/>
+    
+    </application>
+ 
+</manifest>

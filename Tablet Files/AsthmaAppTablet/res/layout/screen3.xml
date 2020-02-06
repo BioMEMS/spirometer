@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent" 
+    android:layout_width="fill_parent">
+
+     <TextView
+   		android:id="@+id/test1"
+        android:text="0"
+        android:gravity="center_horizontal"
+        android:textSize="10pt"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"/>
+        
+    <TextView 
+   		android:id="@+id/instructions_title"
+    	android:layout_height="50dip" 
+    	android:layout_width="fill_parent" 
+    	android:gravity="center_horizontal" 
+   		android:text="Asthma Monitoring Device Instructions: Spirometry and Peak Expiratory Flow" 
+    	android:textSize="15pt" 
+    	android:layout_below="@id/test1"/>
+    
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="1000dip"
+        android:layout_height="300dip"
+        android:layout_below="@id/instructions_title"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Please be seated for the test. The next two screens, you will be asked to first obtain the sensor and then connect the sensor to your Android mobile device through USB. After connecting the two devices, click OK on your screen to give the sensor permission to operate on your mobile device. Sit with your back straight and face forward. Bring the sensor up to your mouth so that you maintaining good posture. Take the deepest breath possible. Once the indicator light becomes green, exhale as fast as possible through your mouth into the device. Use a nose clip if necessary to prevent loss of air through your nose. Stop exhaling when the indicator light becomes red."
+        android:textSize="9pt" />
+
+   <Button
+       android:id="@+id/next_button"
+       android:layout_width="200dip"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/instructions"
+       android:layout_centerHorizontal="true"
+       android:text="Next" />
+        
+</RelativeLayout>

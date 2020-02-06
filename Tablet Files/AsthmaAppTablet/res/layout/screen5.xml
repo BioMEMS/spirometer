@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent" 
+    android:layout_width="fill_parent" 
+    android:orientation="vertical" >
+
+    <TextView
+   		android:id="@+id/test"
+   		android:text="0"
+        android:layout_width="fill_parent"
+        android:padding="5sp"
+        android:layout_height="wrap_content"/>
+    
+    <TextView
+   		android:id="@+id/line1"
+   		android:text="Flow rate (L/min)"
+        android:layout_width="fill_parent"
+        android:padding="5sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/test"/>
+        
+        
+    <TextView
+   		android:id="@+id/pressurevalue"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/line1"
+        android:padding="5sp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        />
+    
+      <TextView
+   		android:id="@+id/line2"
+   		android:layout_below="@id/pressurevalue"
+   		android:text="Peak Expiratory Flow (L/min)"
+        android:layout_width="fill_parent"
+        android:padding="5sp"
+        android:layout_height="wrap_content"/>
+        
+      <TextView
+   		android:id="@+id/peakvalue"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/line2"
+        android:padding="5sp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        />
+
+   <Button
+       android:id="@+id/done_button1"
+       android:layout_width="500dip"
+       android:layout_height="40dip"
+       android:layout_below="@id/peakvalue"
+       android:layout_centerHorizontal="true"
+       android:text="Done Recording" />
+        
+   <Button
+        android:id="@+id/abort_button1"
+        android:layout_width="500dip"
+        android:layout_height="40dip"
+        android:layout_below="@id/done_button1"
+        android:layout_centerHorizontal="true"
+        android:text="Stop Test" 
+        />
+   
+  <TextView
+   		android:id="@+id/graphtestline"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/abort_button1"
+        android:padding="5sp" 
+        android:layout_height="wrap_content"
+        android:text="0"
+        />
+  
+    <TextView
+   		android:id="@+id/checkline"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/graphtestline"
+        android:padding="5sp" 
+        android:layout_height="wrap_content"
+        android:text="0"
+        />
+    
+       <TextView
+   		android:id="@+id/checkline1"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/checkline"
+        android:padding="5sp" 
+        android:layout_height="wrap_content"
+        android:text="0"
+        />
+   
+   <LinearLayout
+       android:id="@+id/chart1"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/checkline1"
+       android:orientation="horizontal"
+       android:layout_weight="1"
+        />
+        
+</LinearLayout>

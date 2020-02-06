@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent" 
+    android:layout_width="fill_parent">
+
+     <TextView
+   		android:id="@+id/test"
+        android:text="0"
+        android:gravity="center_horizontal"
+        android:textSize="10pt"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"/>
+     
+    <TextView
+   		android:id="@+id/end_instructions"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/test"
+        android:padding="5sp"
+        android:layout_height="wrap_content"
+        android:text="This concludes the ashtma monitoring test. If you would like to take another asthma test, please unplug the USB cord from the device and press the restart button on the device before selecting the END TEST button. Once back at the home screen, proceed with another test."
+        />
+
+   <Button
+       android:id="@+id/end_button"
+       android:layout_width="500dip"
+       android:layout_height="40dip"
+       android:layout_below="@id/end_instructions"
+       android:layout_centerHorizontal="true"
+       android:text="End Test" />
+    
+        
+</RelativeLayout>

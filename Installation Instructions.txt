@@ -1,0 +1,45 @@
+Installing Android Software Development Kit (SDK) and Eclipse:
+For full instructions on how to install the Adroid SDK and Eclipse, visit developer.android.com/sdk/installing.html. 
+
+1.	Ensure that the computer meets the system requirements. To see an updated list of system requirements, go to http://developer.android.com/sdk/requirements.html. 
+a.	Supported Development Environments
+i.	Eclipse IDE Eclipse 3.6.2 (Helios) or greater Note: Eclipse 3.5 (Galileo) is no longer supported with the latest version of ADT.
+http://www.eclipse.org/downloads/packages/eclipse-classic-422/junosr2
+ii.	Eclipse JDT plugin (included in most Eclipse IDE packages)
+iii.	If you need to install or update Eclipse, you can download it from http://www.eclipse.org/downloads/.Several types of Eclipse packages are available for each platform. For developing Android applications, the recommended packages are:
+1.	Eclipse IDE for Java Developers
+2.	Eclipse Classic
+3.	Eclipse IDE for Java EE Developers
+iv.	JDK 6 (JRE alone is not sufficient)
+v.	Android Development Tools plugin (recommended)
+vi.	Not compatible with Gnu Compiler for Java (gcj)
+2.	Install the SDK starter package for Windows or Mac OS X (intel)
+a.	If you are using Windows, it is recommended that the installer is used for help with the initial setup. Visit developer.android.com/sdk/index.html.
+3.	Install the ADT Plugin for Eclipse 
+a.	Be sure you have downloaded and installed Eclipse Integrated Development Environment (IDE) from eclipse.org/downloads/. 
+b.	Download the Android Development Took (ADT) plugin
+i.	 In Eclipse, go to Help > Install New Software
+ii.	 Click “Add” in the top-right corner. 
+iii.	 In the Add Repository dialog, enter “ADT Plugin” for the Name and “https://dl-ssl.google.com/android/eclipse/” for the Location. 
+iv.	 Click OK.
+v.	 In the Available Software dialog, select the checkbox next to Developer Tools and click Next.
+vi.	 The next window will show a list of tools to be downloaded. Click Next.
+vii.	 Read and accept the license agreement. Click Finish.
+viii.	 Restart Eclipse after the installation is completed.
+4.	Configure the ADT Plugin
+a.	Modify the ADT preferences in Eclipse to point to the Android SDK directory by selecting Window > Preferences (on Mac OS X: Eclipse > Preferences).
+b.	Select Android from the left panel.
+c.	For the SDK Location in the main panel, click Browse and locate the downloaded SDK directory.
+d.	Click Apply, then OK. 
+5.	Add Platforms and Other Packages in Eclipse
+a.	In Eclipse, go to Window > Android SDK Manager > Available packages
+b.	Be sure to install Android 4.2.2, Android 4.1.2, Android 4.0.3, Android 4.0, Android 3.2, Android 3.1, Android 3.0, Android 2.3.3, Android 2.2, Android 2.1
+c.	Be sure to install API 14, API 13, API 12, API 11, API 10, API 8, and API 7
+d.	Be sure to install Google API 10, Google API 12, and Google API 14
+
+
+Installing Arduino USB Host Shield:
+In order to implement the Arduino USB Host Shield into the Android program, be sure to follow directions for installation of Android ADK on the Android developer website(developer.android.com/guide/topics/usb/adk.html).  
+
+1.	Download and install the Arduino Software as described on the Arduino website. 
+2.	Copy the AndroidAccessory and USB_Host_Shield libraries to the “Arduino/libraries” folder.

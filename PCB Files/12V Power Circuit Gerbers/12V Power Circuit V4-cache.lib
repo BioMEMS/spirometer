@@ -1,0 +1,191 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# 12V_Power_Circuit_V4-eagle-import:1,6_0,8
+#
+DEF 12V_Power_Circuit_V4-eagle-import:1,6_0,8 PAD 0 40 Y Y 1 L N
+F0 "PAD" -45 73 59 H V L BNN
+F1 "12V_Power_Circuit_V4-eagle-import:1,6_0,8" -45 -130 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -40 -40 40 40 N
+P 2 1 0 0 -40 40 40 -40 N
+X P 1 100 0 100 L 0 0 1 0 P
+ENDDRAW
+ENDDEF
+#
+# 12V_Power_Circuit_V4-eagle-import:C-USC1206
+#
+DEF 12V_Power_Circuit_V4-eagle-import:C-USC1206 C 0 40 Y Y 1 L N
+F0 "C" 40 25 59 H V L BNN
+F1 "12V_Power_Circuit_V4-eagle-import:C-USC1206" 40 -165 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+A 0 -199 159 900 1274 1 0 10 N 0 -40 -97 -72
+A 0 -198 159 519 900 1 0 10 N 98 -73 0 -39
+P 2 1 0 0 -100 0 100 0 N
+P 2 1 0 0 0 -40 0 -100 N
+X 1 1 0 100 100 D 0 0 1 0 P
+X 2 2 0 -200 100 U 0 0 1 0 P
+ENDDRAW
+ENDDEF
+#
+# 12V_Power_Circuit_V4-eagle-import:C-USC1210
+#
+DEF 12V_Power_Circuit_V4-eagle-import:C-USC1210 C 0 40 Y Y 1 L N
+F0 "C" 40 25 59 H V L BNN
+F1 "12V_Power_Circuit_V4-eagle-import:C-USC1210" 40 -165 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+A 0 -199 159 900 1274 1 0 10 N 0 -40 -97 -72
+A 0 -198 159 519 900 1 0 10 N 98 -73 0 -39
+P 2 1 0 0 -100 0 100 0 N
+P 2 1 0 0 0 -40 0 -100 N
+X 1 1 0 100 100 D 0 0 1 0 P
+X 2 2 0 -200 100 U 0 0 1 0 P
+ENDDRAW
+ENDDEF
+#
+# 12V_Power_Circuit_V4-eagle-import:FUNG-MIRROR-DCJ0202
+#
+DEF 12V_Power_Circuit_V4-eagle-import:FUNG-MIRROR-DCJ0202 J 0 40 Y Y 1 L N
+F0 "J" -100 150 59 H V L BNN
+F1 "12V_Power_Circuit_V4-eagle-import:FUNG-MIRROR-DCJ0202" -100 -250 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -130 -100 -70 50 1 0 0 F
+P 2 1 0 0 -100 100 -100 50 N
+P 2 1 0 0 0 -40 -30 -100 N
+P 2 1 0 0 30 -100 0 -40 N
+P 2 1 0 0 100 -100 30 -100 N
+P 2 1 0 0 100 0 100 -100 N
+P 2 1 0 0 200 -100 100 -100 N
+P 2 1 0 0 200 0 100 0 N
+P 2 1 0 0 200 100 -100 100 N
+P 3 1 0 0 100 -100 80 -50 120 -50 F
+X 1 1 300 100 100 L 50 0 1 0 P
+X 2 2 300 0 100 L 50 0 1 0 P
+X 3 3 300 -100 100 L 50 0 1 0 P
+ENDDRAW
+ENDDEF
+#
+# 12V_Power_Circuit_V4-eagle-import:FUNG_LT1761BYP
+#
+DEF ~12V_Power_Circuit_V4-eagle-import:FUNG_LT1761BYP ~ 0 40 Y Y 1 L N
+F0 "" 0 0 50 H I C CNN
+F1 "12V_Power_Circuit_V4-eagle-import:FUNG_LT1761BYP" 0 0 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 -200 300 59 0 1 0 LT1761BYP Normal 0 L B
+P 2 1 0 0 -400 -300 -400 400 N
+P 2 1 0 0 -400 400 400 400 N
+P 2 1 0 0 400 -300 -400 -300 N
+P 2 1 0 0 400 400 400 -300 N
+X VIN_1 1 -600 200 200 R 50 50 1 0 I
+X GND_2 2 0 -500 200 U 50 50 1 0 U
+X BYP_3 3 -600 -100 200 R 50 50 1 0 U
+X ADJ_4 4 600 -100 200 L 50 50 1 0 U
+X VOUT_5 5 600 200 200 L 50 50 1 0 O
+ENDDRAW
+ENDDEF
+#
+# 12V_Power_Circuit_V4-eagle-import:GND
+#
+DEF 12V_Power_Circuit_V4-eagle-import:GND #SUPPLY 0 40 Y Y 1 L P
+F0 "#SUPPLY" 0 0 50 H I C CNN
+F1 "12V_Power_Circuit_V4-eagle-import:GND" -75 -125 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -50 0 50 0 N
+P 2 1 0 0 0 -50 -50 0 N
+P 2 1 0 0 50 0 0 -50 N
+X GND 1 0 100 100 D 0 0 1 0 W
+ENDDRAW
+ENDDEF
+#
+# 12V_Power_Circuit_V4-eagle-import:J7MM
+#
+DEF 12V_Power_Circuit_V4-eagle-import:J7MM J 0 40 Y Y 1 L N
+F0 "J" -100 75 59 H V L BNN
+F1 "12V_Power_Circuit_V4-eagle-import:J7MM" -100 -100 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C -100 0 10 1 0 16 N
+C 100 0 10 1 0 16 N
+P 2 1 0 0 -100 0 -50 50 N
+P 2 1 0 0 -50 50 50 50 N
+P 2 1 0 0 100 0 50 50 N
+X 1 1 -200 0 100 R 50 0 1 0 P
+X 2 2 200 0 100 L 50 0 1 0 P
+ENDDRAW
+ENDDEF
+#
+# 12V_Power_Circuit_V4-eagle-import:JP1Q
+#
+DEF 12V_Power_Circuit_V4-eagle-import:JP1Q JP 0 40 Y Y 1 L N
+F0 "JP" -100 -200 59 V V L BNN
+F1 "12V_Power_Circuit_V4-eagle-import:JP1Q" 175 -200 59 V V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -75 -200 -75 200 N
+P 2 1 0 0 -75 200 75 200 N
+P 2 1 0 0 0 -150 0 -200 N
+P 2 1 0 0 0 -100 0 -150 N
+P 2 1 0 0 0 100 0 150 N
+P 2 1 0 0 0 150 0 200 N
+P 2 1 0 0 75 -200 -75 -200 N
+P 2 1 0 0 75 200 75 -200 N
+X 1 1 0 -300 100 U 50 0 1 0 P
+X 2 2 0 300 100 D 50 0 1 0 P
+ENDDRAW
+ENDDEF
+#
+# 12V_Power_Circuit_V4-eagle-import:MBR0520LT
+#
+DEF 12V_Power_Circuit_V4-eagle-import:MBR0520LT D 0 40 Y Y 1 L N
+F0 "D" 100 19 59 H V L BNN
+F1 "12V_Power_Circuit_V4-eagle-import:MBR0520LT" 100 -91 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -50 -50 50 0 N
+P 2 1 0 0 -50 50 -50 -50 N
+P 2 1 0 0 50 0 -50 50 N
+P 2 1 0 0 50 0 50 -50 N
+P 2 1 0 0 50 50 50 0 N
+X A A -100 0 100 R 0 0 1 0 P
+X C C 100 0 100 L 0 0 1 0 P
+ENDDRAW
+ENDDEF
+#
+# 12V_Power_Circuit_V4-eagle-import:R-US_M1206
+#
+DEF 12V_Power_Circuit_V4-eagle-import:R-US_M1206 R 0 40 Y Y 1 L N
+F0 "R" -150 59 59 H V L BNN
+F1 "12V_Power_Circuit_V4-eagle-import:R-US_M1206" -150 -130 59 H V L BNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 0 0 -100 0 -85 40 N
+P 2 1 0 0 -85 40 -60 -40 N
+P 2 1 0 0 -60 -40 -35 40 N
+P 2 1 0 0 -35 40 -10 -40 N
+P 2 1 0 0 -10 -40 15 40 N
+P 2 1 0 0 15 40 40 -40 N
+P 2 1 0 0 40 -40 65 40 N
+P 2 1 0 0 65 40 90 -40 N
+P 2 1 0 0 90 -40 100 0 N
+X 1 1 -200 0 100 R 0 0 1 0 P
+X 2 2 200 0 100 L 0 0 1 0 P
+ENDDRAW
+ENDDEF
+#
+#End Library
